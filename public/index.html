@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youRX 메인 페이지</title>
+
+    <!-- 외부 리소스: 폰트 및 아이콘 -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- css 적용 -->
+    <link rel="stylesheet" href="/css/user_sytle.css" />
+    <!-- QR 코드 생성 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script defer src="/js/user_main.js"></script>
+  </head>
+  <body>
+    <!-- 헤더 영역 -->
+    <header>
+      <div class="component-logo">
+        <a href="index.html"><img src="/image/logo.png" alt="youRX 로고" /></a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#" class="nav-link">홈</a></li>
+          <li><a href="org_index.html" class="nav-link">기관</a></li>
+          <li><a href="result.html" class="nav-link">김사과</a></li>
+          <li><a href="#section-contact" class="nav-link">문의</a></li>
+        </ul>
+      </nav>
+      <div class="component-auth-buttons">
+        <button class="auth-button login-button" onclick="login()">
+          로그인
+        </button>
+        <button class="auth-button logout-button" onclick="logout()">
+          로그아웃
+        </button>
+        <button class="auth-button signup-button" onclick="signup()">
+          회원가입
+        </button>
+      </div>
+    </header>
+
+    <!-- 메인 히어로 영역 -->
+    <section class="section-hero" id="hero">
+      <div class="component-hero-inner">
+        <h1>Scan. RX. You.</h1>
+        <p>"한 번의 스캔으로 완벽한 처방을 경험하세요."</p>
+        <a href="#features" class="cta">주요 기능 보기</a>
+      </div>
+    </section>
+
+    <!-- 기능 소개 영역 -->
+    <main>
+      <section class="section-features" id="features">
+        <!-- 기능 카드 1 -->
+        <div class="card-feature">
+          <i class="fas fa-prescription-bottle-medical"></i>
+          <h3>복용 약물 분석</h3>
+          <p>AI 이미지 분석으로 복용 중인 약물을 자동으로 인식·분석합니다.</p>
+          <a href="/pill-analysis">시작하기</a>
+        </div>
+        <!-- 기능 카드 2 -->
+        <div class="card-feature">
+          <i class="fas fa-hospital"></i>
+          <h3>근처 의료기관 찾기</h3>
+          <p>카카오 맵 API로 주변 병원·보건소·약국을 한눈에 확인합니다.</p>
+          <a href="/nearby-clinics">시작하기</a>
+        </div>
+        <!-- 기능 카드 3 -->
+        <div class="card-feature">
+          <i class="fas fa-user-md"></i>
+          <h3>내 정보 보기</h3>
+          <p>개인 정보 조회, 복용 이력 및 과거 병력/수술이력을 관리합니다.</p>
+          <a href="/profile">조회하기</a>
+        </div>
+        <!-- 기능 카드 4 -->
+        <div class="card-feature">
+          <i class="fas fa-file-medical"></i>
+          <h3>의료영상 저장·분석</h3>
+          <p>
+            MRI, CT, X-ray 영상을 저장하고 AI 기반 분석으로 진단 효율을
+            높입니다. 타 병원 이동 시 재촬영 없이 활용 가능합니다.
+          </p>
+          <a href="/medical-imaging">관리하기</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- QR 코드 섹션 -->
+    <section id="section-qr" class="section-qr">
+      <h3>내 QR 코드</h3>
+      <p>QR 코드를 클릭해주세요.</p>
+      <div id="component-qr-container" class="qr-container"></div>
+    </section>
+
+    <!-- 푸터 영역 -->
+    <footer>© 2025 youRX. All rights reserved.</footer>
+  </body>
+</html>

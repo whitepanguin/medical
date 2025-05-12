@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>youRX 기관용 페이지</title>
+    <link rel="stylesheet" href="/css/org_style.css" />
+    <script defer src="/js/org_main.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html"><img src="/image/logo.png" alt="youRX 로고" /></a>
+      <button class="logout-button" onclick="logout()">로그아웃</button>
+    </header>
+
+    <section class="section-hero">
+      <div class="inner">
+        <h1>Scan. Inform. Care.</h1>
+        <p>
+          단 한 번의 스캔으로 환자 정보를 빠르게 파악하고, 진료에 집중하세요.
+        </p>
+        <a href="#content-wrapper" class="cta">주요 기능 보기</a>
+      </div>
+    </section>
+
+    <div class="content-wrapper" id="content-wrapper">
+      <div class="scan-area">
+        <h2>환자 QR을 스캔하세요</h2>
+        <p>QR 인식이 완료되면 환자 정보 페이지로 이동합니다.</p>
+        <button onclick="simulateScan()">QR 스캔 시뮬레이션</button>
+      </div>
+
+      <div class="recent-patients">
+        <h2>환자 검색</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="이름 또는 휴대폰 뒷자리 입력"
+        />
+        <ul id="recent-patient-list"></ul>
+      </div>
+    </div>
+    <footer>© 2025 youRX. All rights reserved.</footer>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>환자 정보 열람 - youRX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/org_result.css">
+    <script defer src="/js/org_result.js"></script>
+  </head>
+  <body>
+    <div class="back-button">
+      <button onclick="history.back()">
+        <i class="fas fa-arrow-left"></i> 뒤로가기
+      </button>
+    </div>
+
+    <h1>환자 진료 정보 열람</h1>
+
+    <section class="patient-summary">
+      <h2>기본 정보</h2>
+      <p><strong>이름:</strong> 김사과</p>
+      <p><strong>생년월일:</strong> 1990년 5월 20일</p>
+      <p><strong>성별:</strong> 여성</p>
+
+      <h2>약물 복용 이력</h2>
+      <p>- Acetaminophen 500mg 1일 3회 경구 투여</p>
+      <p>- Metformin 500mg 아침·저녁 식후 복용</p>
+
+      <h2>진단 병력</h2>
+      <p>- 본태성 고혈압 (2017)</p>
+      <p>- 요로결석 (2021)</p>
+
+      <h2>수술 이력</h2>
+      <p>- 충수절제술 (Appendectomy, 2015)</p>
+      <p>- 관절경적 슬관절 반월상 연골 절제술 (2022)</p>
+    </section>
+
+    <section class="image-section">
+      <div class="image-block">
+        <h3>MRI (뇌 자기공명영상)</h3>
+        <img src="" alt="MRI 뇌 영상" />
+      </div>
+      <div class="image-block">
+        <h3>CT (복부 전산화단층촬영)</h3>
+        <img src="" alt="CT 복부 영상" />
+      </div>
+      <div class="image-block">
+        <h3>X-ray (흉부 방사선 검사)</h3>
+        <img src="" alt="X-ray 흉부 영상" />
+      </div>
+    </section>
+    <footer>© 2025 youRX. All rights reserved.</footer>
+  </body>
+</html>

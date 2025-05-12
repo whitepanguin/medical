@@ -1,0 +1,148 @@
+:root {
+  --primary: #0066cc;
+  --secondary: #00cc99;
+  --bg: #f5f5f5;
+  --text: #333;
+  --card-bg: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+a {
+  text-decoration: none;
+}
+/* 헤더 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 72px;
+}
+header img {
+  height: 100px;
+  object-fit: contain;
+}
+.logout-button {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.logout-button:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+/* 히어로 영역 */
+.section-hero {
+  height: 80vh;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+.section-hero .inner {
+  max-width: 720px;
+  padding: 0 20px;
+}
+.section-hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+.section-hero p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+.section-hero .cta {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #fff;
+  color: var(--primary);
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+  margin-top: 1.6rem;
+}
+.section-hero .cta:hover {
+  background: var(--secondary);
+  color: #fff;
+}
+
+/* QR 스캔 */
+.content-wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.scan-area,
+.recent-patients {
+  flex: 1;
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.scan-area h2,
+.recent-patients h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: var(--primary);
+}
+.scan-area button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.scan-area button:hover {
+  background-color: #004f99;
+}
+.recent-patients input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.recent-patients ul {
+  list-style: none;
+  padding-left: 0;
+}
+.recent-patients li {
+  background: #fff;
+  margin-bottom: 8px;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.875rem;
+  margin-top: 40px;
+}
