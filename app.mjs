@@ -5,7 +5,7 @@ import { dirname } from "path";
 import postsRouter from "./router/post.mjs";
 import authRouter from "./router/auth.mjs";
 import { config } from "./config.mjs";
-import connect from "./connect/connect.js";
+import connect from "./connect/connect.mjs";
 
 connect();
 
